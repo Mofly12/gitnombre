@@ -15,14 +15,14 @@ class Pedido extends Model
 {
     /**
      * The table associated with the model.
-     * 
+     *
      * @var string
      */
     protected $table = 'orders';
 
     /**
      * The primary key for the model.
-     * 
+     *
      * @var string
      */
     protected $primaryKey = 'order_id';
@@ -34,7 +34,7 @@ class Pedido extends Model
 
     /**
      * Indicates if the model should be timestamped.
-     * 
+     *
      * @var bool
      */
     public $timestamps = false;
@@ -52,6 +52,7 @@ class Pedido extends Model
      */
     public function ordersProducts()
     {
+        //esto es para git
         return $this->hasMany('App\OrdersProduct', null, 'order_id');
     }
 }
